@@ -10,11 +10,11 @@ The pipeline of our robust 2D-3D retrieval framework (RONO). First, modality-spe
 ![test](./tools/main.jpg)
 
 ## Requirements
-python 3.7
-pyTorch 1.7
-torchvision 0.8.2
-numpy 1.20.1
-scikit-learn 0.24.1
+- python 3.7
+- pyTorch 1.7
+- torchvision 0.8.2
+- numpy 1.20.1
+- scikit-learn 0.24.1
 
 ## Data
 Only 3D MNIST dataset data is currently available (**other codes and data are coming soon**). 
