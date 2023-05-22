@@ -10,11 +10,11 @@ The pipeline of our robust 2D-3D retrieval framework (RONO). First, modality-spe
 ![test](./tools/main.jpg)
 
 ## Requirements
-python 3.7
-pyTorch 1.7
-torchvision 0.8.2
-numpy 1.20.1
-scikit-learn 0.24.1
+- python 3.7
+- pyTorch 1.7
+- torchvision 0.8.2
+- numpy 1.20.1
+- scikit-learn 0.24.1
 
 ## Data
 Only 3D MNIST dataset data is currently available (**other codes and data are coming soon**). 
@@ -99,11 +99,4 @@ Pt2Image---------------------------
 82.27
 
 ## Citation
-@InProceedings{Feng_2023_CVPR,
-    author    = {Feng, Yanglin and Zhu, Hongyuan and Peng, Dezhong and Peng, Xi and Hu, Peng},
-    title     = {RONO: Robust Discriminative Learning With Noisy Labels for 2D-3D Cross-Modal Retrieval},
-    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    month     = {June},
-    year      = {2023},
-    pages     = {11610-11619}
-}
+Coming soon.
