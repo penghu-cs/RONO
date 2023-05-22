@@ -99,4 +99,11 @@ Pt2Image---------------------------
 82.27
 
 ## Citation
-Coming soon.
+@InProceedings{Feng_2023_CVPR,
+    author    = {Feng, Yanglin and Zhu, Hongyuan and Peng, Dezhong and Peng, Xi and Hu, Peng},
+    title     = {RONO: Robust Discriminative Learning With Noisy Labels for 2D-3D Cross-Modal Retrieval},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2023},
+    pages     = {11610-11619}
+}
