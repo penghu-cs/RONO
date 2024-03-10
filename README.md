@@ -23,13 +23,30 @@ To reduce the computational time and space cost for a quick start, we extracted 
 
 If you use raw data [Kaggle-3D MNIST](https://www.kaggle.com/datasets/daavoo/3d-mnist) , suitable data augmentation can bring the performance of the method to a higher level. 
 
+**For ModelNet**
+
+Due to the limitation of computing resources, we use features extracted by pre-trained models. (The image modality pre-training model has poor feature extraction, so it is discarded)
+The point cloud data and noisy labels we use: [ModelNet10](https://www.dropbox.com/scl/fo/x40trsxrjf6opt7l15zsm/h?rlkey=a4z75znlvlbi0odu445ts80e5&dl=0), [ModelNet40](https://www.dropbox.com/scl/fo/2oyahbyp4scnkvb5k96sk/h?rlkey=ujg89pc3sturtbtyozhipgiew&dl=0). You can put them into  ./datasets/ModelNet10/  or  ./datasets/ModelNet40/
+
+ All the 180-view images in ModelNet10/40 could be find in [CrossmodalCenterLoss](https://github.com/LongLong-Jing/Cross-Modal-Center-Loss/issues/2). You can put them into ./datasets/
+
 ## Train and test
 run open_source_train_mnist.py for training
 
 run evaluate_retrieval_mnist.py for testing
 
+**For ModelNet (you can choose 10/40 in the Argument Settings)**
+
+run open_source_train_modelnet.py for training
+
+run evaluate_retrieval_modelnet.py for testing
+
 ## Checkpoints
 We have put some completed training models of the 3D MNIST dataset [on dropbox](https://www.dropbox.com/scl/fo/eu5hrfxdskjqthl4hqusz/h?dl=0&rlkey=5j0mrpmydrpf5rog8d91gjdgz), you can put them into under ./checkpoints/3D_MNIST/ and directly modify the path in the evaluate_retrieval_mnist.py for direct use during testing.
+
+**For ModelNet**
+We have put some completed training models in [ModelNet10](https://www.dropbox.com/scl/fo/refypdvg4et3lbjcof6yo/h?rlkey=8gybmny17th2gfm2z47yaii73&dl=0) and [ModelNet40](https://www.dropbox.com/scl/fo/5ndmrt29buszwjyiie0zh/h?rlkey=h99p39eenf4o2pmu7xlhbeoys&dl=0) with 40% noise, you can put them into under ./checkpoints/ModelNet10(or 40)/ and directly modify the path in the evaluate_retrieval_modelnet.py for direct use during testing.
+
 
 ## Reproduction of results
 (2023.3.12) The results of arbitrarily run experiments have met or even exceeded the results reported by our method. The models to which the experimental results belong are being stored in checkpoints.
@@ -97,6 +114,45 @@ Image2Pt---------------------------
 Pt2Image---------------------------
 
 82.27
+
+**For ModelNet10 __ 40% noise**
+
+number of img views:  1
+
+Image2Image---------------------------
+
+86.18
+
+Image2Point---------------------------
+
+87.1
+
+Point2Point---------------------------
+
+89.37
+
+Point2Image---------------------------
+
+87.06
+
+**For ModelNet40 __ 40% noise**
+
+Image2Image---------------------------
+
+85.02
+
+Image2Point---------------------------
+
+85.82
+
+Point2Point---------------------------
+
+87.53
+
+Point2Image---------------------------
+
+85.47
+
 
 ## Citation
 @InProceedings{Feng_2023_CVPR,
